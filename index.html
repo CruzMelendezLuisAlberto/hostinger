@@ -1,8 +1,200 @@
-<html>
-  <head>
-    <title>
-      MI PRIMERA PÁGINA
-    </title>
-  </head>
-  <body><h1>HOLA AMIGOS</h1></body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aula Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra superior (contacto/redes) -->
+    <div class="top-bar">
+    <div class="toolbar container">
+        <div class="contact-info">
+            <a href="tel:+51956151965"><i class="fas fa-phone"></i> 956 151 965</a>
+            <a href="mailto:lcruzmelendez4@gmail.com"><i class="fas fa-envelope"></i> lcruzmelendez4@gmail.com</a>
+            <a href="https://maps.google.com" target="_blank"><i class="fas fa-map-marker-alt"></i> Lima, Perú</a>
+        </div>
+            <div class="social-icons">
+            <a href="https://wa.me/51956151965" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+    <!-- Modal de IA -->
+    <div id="aiModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Asistente de IA</h2>
+            <p>Pregunta cualquier cosa sobre nuestros cursos y recursos:</p>
+            <input type="text" class="ai-search-box" id="aiQuery" placeholder="¿Qué necesitas saber?">
+            <button class="submit-btn">Buscar</button>
+            <div class="ai-response" id="aiResponse">
+                <p>Aquí aparecerán los resultados de tu búsqueda...</p>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-container">
+            <img src="C:\Users\LUIS CRUZ\Desktop\MI AULA DIGITAL\foto..png" alt="foto..png" width="180" height="150">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" id="inicio-btn">Inicio</a></li>
+                <li><a href="#" id="mision-btn">Misión/Visión</a></li>
+                <li class="dropdown">
+                    <a href="#">Cursos▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.khanacademy.org/math" target="_blank">Matemáticas (Khan Academy)</a></li>
+                        <li><a href="https://es.khanacademy.org/science" target="_blank">Ciencias (Khan Academy)</a></li>
+                        <li><a href="https://www.codecademy.com/catalog/subject/web-development" target="_blank">Programación (Codecademy)</a></li>
+                        <li><a href="https://es.duolingo.com/" target="_blank">Idiomas (Duolingo)</a></li>
+                        <li><a href="https://www.edx.org/learn/history" target="_blank">Historia (edX)</a></li>
+                        <li><a href="https://www.coursera.org/browse/arts-and-humanities" target="_blank">Artes (Coursera)</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Recursos▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.perueduca.pe/#/home/materiales-educativos" target="_blank">Materiales Educativos (MINEDU)</a></li>
+                        <li><a href="https://www.youtube.com/educacion" target="_blank">Videos Educativos (YouTube)</a></li>
+                        <li><a href="https://es.liveworksheets.com/" target="_blank">Ejercicios Interactivos (LiveWorksheets)</a></li>
+                        <li><a href="https://es.educaplay.com/" target="_blank">Material Descargable (Educaplay)</a></li>
+                        <li><a href="https://openlibra.com/es" target="_blank">Libros Gratis (OpenLibra)</a></li>
+                        <li><a href="https://www.geogebra.org/" target="_blank">Herramientas Matemáticas (GeoGebra)</a></li>
+                        <li><a href="https://quizlet.com/es" target="_blank">Tarjetas de Estudio (Quizlet)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto" id="contacto-btn">Contacto</a></li>
+                <li>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Buscar...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-robot ai-icon" id="ai-btn"></i>
+                </li>
+            </ul>
+        </nav>
+        <button class="login-btn" id="login-btn">Acceder</button>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <h2>Transformando la educación digital</h2>
+            <p>Una plataforma interactiva para aprender, crear y compartir conocimiento.</p>
+        </section>
+
+        <section class="features-horizontal">
+            <div class="feature-card-horizontal virtual-classroom">
+                <div class="feature-icon-horizontal">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Aula Virtual</h3>
+                <p>Accede a clases en vivo, material interactivo y sesiones con profesores en tiempo real.</p>
+                <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638832278938778493.NGY4ZGY5ZjItM2ZkMC00NjEwLWIxZWEtNThlNjQ0ZWJkODAzYTIwM2E1ODgtOGFlZi00ZDViLTgzMzUtMjlmMTQ4NDc5NjQz&ui_locales=es-ES&mkt=es-ES&client-request-id=67fb8095-0e1b-4c46-9684-448a3691d622&state=3fu3wz5Vk0Du0mH4IeT0enXlRHsontd1GPvaR7MD3LTWpSg8LJFwqMcCekFNSOPlyeTqnLHGE2Yj6bmXeNO8sJ9Fu9e8OmJv3pc-2hGjgmTvTByAUIQ0bjUcluLSPKmMzmsSwbtzvLd9UrqymEEPoU-gV7AmzI-n9D6znbuF8uzKpQDo3juCT4PEuhhp8r0NYIaDWnhH7kYzfy0AEYIky6HeVvUMDa7ykB0h9tssaUf-Ik0HROP9XSfdkKhMwQiBTYvQlpQSfGXbLSnNgCZfsPYXcm0StRCAmDfZBJ82UGA&x-client-SKU=ID_NET8_0&x-client-ver=8.5.0.0" class="feature-btn" target="_blank">Ingresar</a>
+            </div>
+
+            <div class="feature-card-horizontal teachers">
+                <div class="feature-icon-horizontal">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Nuestros Profesores</h3>
+                <p>Conoce a nuestro equipo de educadores certificados y con amplia experiencia pedagógica.</p>
+                <a href="#" class="feature-btn" id="profesores-btn">Ver Equipo</a>
+            </div>
+
+            <div class="feature-card-horizontal progress-track">
+                <div class="feature-icon-horizontal">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Seguimiento</h3>
+                <p>Monitoriza tu progreso con reportes detallados y recomendaciones personalizadas.</p>
+                <a href="#" class="feature-btn" id="progreso-btn">Ver Progreso</a>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-form">
+            <h2>Contáctanos</h2>
+            <form id="formularioContacto">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="DNI" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <section id="mission-vision-page" class="secondary-page mission-vision-page">
+        <h2>Nuestra Misión y Visión</h2>
+        <div class="card">
+            <h3>Misión</h3>
+            <p>Empoderar a estudiantes y educadores con herramientas digitales innovadoras que hagan el aprendizaje accesible, interactivo y divertido.</p>
+        </div>
+        <div class="card">
+            <h3>Visión</h3>
+            <p>Ser la plataforma líder en educación digital en Latinoamérica para 2030.</p>
+        </div>
+        <a href="#" class="back-btn" id="volver-btn-1">Volver al Inicio</a>
+    </section>
+
+    <section id="progress-page" class="secondary-page progress-page">
+        <h2>Seguimiento de Progreso</h2>
+        <div class="progress-container">
+            <div class="progress-card">
+                <div class="progress-chart">75%</div>
+                <h3>Matemáticas</h3>
+            </div>
+            <div class="progress-card">
+                <div class="progress-chart">60%</div>
+                <h3>Ciencias</h3>
+            </div>
+            <div class="progress-card">
+                <div class="progress-chart">90%</div>
+                <h3>Programación</h3>
+            </div>
+        </div>
+        <a href="#" class="back-btn" id="volver-btn-2">Volver al Inicio</a>
+    </section>
+
+    <section id="teachers-page" class="secondary-page">
+        <h2>Nuestro Equipo Docente</h2>
+        <div class="teachers-grid">
+            <div class="teacher-card">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Profesora" class="teacher-img">
+                <h3 class="teacher-name">Dra. Ana Martínez</h3>
+            </div>
+            <div class="teacher-card">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Profesor" class="teacher-img">
+                <h3 class="teacher-name">Dr. Carlos Rodríguez</h3>
+            </div>
+        </div>
+        <a href="#" class="back-btn" id="volver-btn-3">Volver al Inicio</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Mi Aula Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
